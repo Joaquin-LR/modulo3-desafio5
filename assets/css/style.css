@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+/* CAJA */
+.caja {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: min-content;
+    max-height: fit-content;
+    min-width: min-content;
+    max-width: max-content;
+    background-color: rgb(237, 238, 236);
+    border: 0.3px solid black;
+    position: inherit;
+    padding: 0 20px 20px 20px;
+    margin: 20px;
+}
+
+/* CONTENIDO */
+.contenido {
+    padding: 0 10px 0 10px;  
+}       
+
+
+/* Títulos "Todo List" y "Nueva Tarea" */
+.titulo {
+    color: rgb (53, 55, 58);
+    border-bottom: 3px solid rgb(187, 188, 189);
+}
+
+h1 {
+    font-size: 42px;
+    transform: translate(0, -10px);
+    margin-bottom: 15px;
+}
+
+h2 {
+    font-size: 20px;
+    font-weight: 200;
+    padding-top: 13px;
+    transform: translate(0,5px);
+}
+
+
+/* ENTRADA */
+.entrada {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.boton-agregar {
+    background-color: rgb(27, 119, 65);
+    border: none;
+    min-width: 120px;
+    max-width: 120px;
+    height: 52px;
+    border-radius: 5px;
+    color: white;
+    padding: 0;
+}
+
+.boton-agregar:hover {
+    cursor: pointer;
+    background-color: rgb(15, 172, 80);
+}
+
+.boton-agregar:active {
+    background-color: rgb(27, 119, 65);
+}
+
+.entrada p {
+    font-size: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.entrada input{
+    width: 90%;
+    height: 45px;
+    font-size: 20px;
+    padding-left: 10px;
+    border: solid 2px rgb(190, 190, 190);
+}
+
+
+/* SALIDA */
+.salida {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 200px;
+}
+
+
+.salida p {
+    font-size: 20px;
+}
+
+/* Izquierda */
+.realizadas-div {
+    transform: translate(0, -10px);
+}
+
+.total-span, .realizadas-span {
+    font-weight: bolder;
+}
+
+/* Derecha */
+.tabla {
+    margin-top: 12px;
+    transform: translate(10px);
+}
+
+.tarea-ingresada {
+    max-width: 300px;
+}
+
+td, th {
+    font-size: 18px;
+    text-align: left;
+    padding: 0px 60px 10px 0px;
+}
+
+td input[type="checkbox"] {
+    transform: scale(1.8) translate(0, -1px);
+    margin-left: 100px;
+}
+
+.eliminar {
+    color: rgb(233, 35, 20);
+    transform: scale(1.5);
+}
+
+.eliminar:hover {
+    filter: brightness(150%);
+    cursor: pointer;
+}
+
+
+
+

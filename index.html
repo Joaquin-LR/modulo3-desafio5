@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Nombre Pestaña -->
+    <title>Desafio 5</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+
+    <!-- Font Awesome -->
+    <script src="https://kit.fontawesome.com/e5be20f50e.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="caja">
+            <div class="contenido">
+                <div class="titulo">
+                    <h1>Todo List</h1>
+                </div>
+                <div class="nueva-tarea">
+                    <h2>Nueva Tarea</h2>
+                </div>
+
+                <!-- ENTRADA -->
+                <div class="entrada">
+                    <input class="descripcion" type="text" placeholder="Escribe aquí tu tarea.">
+                    <button class="boton-agregar"><p>Agregar</p></button>
+                </div>
+
+                <!-- SALIDA -->
+                <div class="salida">
+
+                    <!-- Izquierda -->
+                    <div class="contadores">
+                        <div>
+                            <p>Total: <span class="total-span"></span></p>
+                        </div>
+                        <div class="realizadas-div">
+                            <p>Realizadas: <span class="realizadas-span"></span></p>
+                        </div>
+                    </div>
+
+
+                    <!-- Derecha -->
+                    <!-- TABLA -->
+                    <div class="tabla">
+                        <table>
+                            <thead class="titulosTabla">
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Tarea</th>
+                                    <th></th>
+                                    <th></th>
+                                </tr>  
+                            </thead>
+                            <tbody id="lista-tareas">
+                                <!-- Renderizado -->
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="./assets/js/script.js"></script>
+</body>
+</html>
