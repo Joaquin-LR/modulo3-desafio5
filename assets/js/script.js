@@ -15,7 +15,7 @@ const actualizarLista = () => {
         template += `
             <tr>
                 <td class="id-generada" style="color: ${tarea.estado ? 'green' : 'black'};"><p>${tarea.id}</p></td>
-                <td class="tarea-ingresada" style="color: ${tarea.estado ? 'green' : 'black'};">${tarea.nombre}</td>
+                <td class="tarea-ingresada" style="color: ${tarea.estado ? 'green' : 'black'}; max-width: 600px;">${tarea.nombre}</td>
                 <td><input type="checkbox" ${tarea.estado ? 'checked' : ''} onclick="cambiarEstado(${index})"></td>
                 <td><img src="./assets/img/ekis.png" class="eliminar" onclick="eliminarTarea(${index})" style="cursor: pointer; width: 20px; height: 20px;"></td>
             </tr>

@@ -117,13 +117,14 @@ h2 {
 }
 
 .tarea-ingresada {
-    max-width: 300px;
+    overflow-x: auto;
 }
 
 td, th {
     font-size: 18px;
     text-align: left;
     padding: 0px 60px 10px 0px;
+    max-width: 300px;
 }
 
 td input[type="checkbox"] {
